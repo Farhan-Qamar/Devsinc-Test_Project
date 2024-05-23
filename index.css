@@ -417,6 +417,12 @@ nav ul li a {
     color: var(--blue);
 }
 
+@media screen and (min-width: 1620px) {
+    .hero-container {
+        height: 750px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .projects-boxs {
         padding: 0 4rem;
