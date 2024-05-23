@@ -423,6 +423,12 @@ nav ul li a {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    .hero-container {
+        height: 550px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .projects-boxs {
         padding: 0 4rem;
