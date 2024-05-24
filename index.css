@@ -71,7 +71,8 @@ nav ul li a {
 }
 
 .hero-container {
-    height: 600px;
+    margin-top: 0;
+    height: 500px;
     background: var(--gradient-color);
     display: flex;
     justify-content: center;
@@ -80,6 +81,7 @@ nav ul li a {
 
 .hero-box {
     width: 80%;
+    max-height: 600px;
     padding: 1rem;
     background-color: var(--white);
     border-radius: 1rem;
@@ -157,7 +159,7 @@ nav ul li a {
     display: flex;
     justify-content: center;
     padding: 5% 10%;
-    padding-top: 15%;
+    padding-top: 280px;
 }
 
 .about1st {
@@ -168,6 +170,7 @@ nav ul li a {
     margin-top: 1rem;
 
 }
+
 .about-contant p {
     color: gray;
 }
@@ -307,6 +310,7 @@ nav ul li a {
 .projects-box h3 {
     margin: 1rem 0;
 }
+
 .projects-btn {
     color: white;
     font-size: 1rem;
@@ -417,29 +421,14 @@ nav ul li a {
     color: var(--blue);
 }
 
-@media screen and (min-width: 1620px) {
-    .hero-container {
-        height: 750px;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .hero-container {
-        height: 550px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .projects-boxs {
-        padding: 0 4rem;
-    }
-    .hero-container {
-        height: 500px;
+@media screen and (max-width: 1300px) and (min-width: 1151px) {
+    .about {
+        padding-top: 230px;
     }
 }
 
 /* Responsiveness */
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 1150px) and (min-width: 769px) {
 
     /* Navbar */
     nav ul li {
@@ -448,20 +437,20 @@ nav ul li a {
     }
 
     nav ul li a {
-        font-size: .8rem;
+        font-size: 1rem;
     }
 
-    /* Hero section */
-    .content-text {
-        gap: .3rem;
+    /* Hero */
+    .hero-container {
+        max-height: 450px;
     }
-
     .hero-box-content {
         padding: 1rem 0;
     }
 
-    .hero-container {
-        height: 500px;
+    /* About */
+    .about {
+        padding-top: 230px;
     }
 
     .projects-boxs {
@@ -483,11 +472,11 @@ nav ul li a {
 
     /* Hero section */
     .hero-container {
-        height: 420px;
+        height: 350px;
     }
 
     .hero-box {
-        top: 6rem;
+        top: 5rem;
     }
 
     .content-text {
@@ -522,6 +511,10 @@ nav ul li a {
     }
 
     /* About section */
+    .about {
+        padding-top: 200px;
+    }
+
     .about-contant p {
         font-size: .8rem;
     }
@@ -549,9 +542,6 @@ nav ul li a {
 }
 
 @media screen and (max-width: 600px) {
-    .hero-container {
-        height: auto;
-    }
 
     /* Header Navbar */
     nav {
@@ -601,14 +591,18 @@ nav ul li a {
     } */
 
     /* Hero section */
+    .hero-container {
+        height: auto;
+    }
+
     .hero-box {
         position: static;
-        top: 0;
-        height: auto;
         width: 100%;
-        flex-direction: column;
+        max-height: fit-content; 
+        padding: 1rem;
         border-radius: 0;
-        box-shadow: 0 .3rem .4rem 0 rgba(58, 58, 58, 0.223);
+        box-shadow: .3rem .3rem .4rem 0 rgba(58, 58, 58, 0.223);
+        flex-direction: column;  
     }
 
     .hero-box .image {
